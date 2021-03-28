@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+
+:root{
+    --primary-color: hsl(220, 98%, 61%);
+    --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+    --Very-Light-Gray: hsl(0, 0%, 93%);
+    --background: hsl(0, 0%, 96%);
+    --Light-Grayish-Blue: hsl(240, 1%, 81%);
+    --Dark-Grayish--Blue: hsl(236, 9%, 61%);
+    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--Very-Light-Gray);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.header{
+    background: linear-gradient var(--Very-Dark-Blue), var(--Very-Dark-Grayish-Blue);
+    background: url('/images/bg-desktop-light.jpg') no-repeat;
+    object-fit: contain;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    z-index: 2;
+}
+
+.todo-wrapper{
+    margin: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Light-Grayish-Blue);
+    border-radius: 5px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -20px;
+}
+
+.todo-list{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+todo-title{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.todo-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+    width: 40%;
+    margin: auto;
+}
+
+.theme-toggler, .todo-title{
+    margin: 4.6rem;
+}
+
+.dark{
+    display: none;
+}
+
+img{
+    width: 20px;
+}
+.todo-input{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+}
+
+.todo-input input{
+    width: 420px;
+    padding: 13px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+}
+.todo-input input:focus{
+    width: 420px;
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    outline: none;
+}
+
+.todo-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background: transparent;
+    height: 30px;
+    width: 80%;
+    border-bottom: 1px solid rgb(37, 37, 37);
+    margin-top: 20px;
+}
+
+.complete, .remove-todo-btn, .todo-text{
+    margin: 10px;
+}
+
+.complete{
+    float: left;
+}
+
+.remove-todo-btn{
+    float: right;
+    height: 25px;
+    text-align: center;
+    color: var(--Very-Dark-Grayish-Blue);
+    background: transparent;
+    border-radius: 2px;
+    border: none;
+}
+.remove-todo-btn:hover{
+    float: right;
+    height: 25px;
+    text-align: center;
+    background: var(--Very-Light-Gray);
+    border-radius: 2px;
+    border: none;
+}
+.remove-todo-btn:focus{
+    float: right;
+    height: 25px;
+    text-align: center;
+    background: var(--Very-Dark-Blue);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin: auto;
+}
+
+.total-left, .todo-status, .clear-items{
+    width: 35%;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.todo-status{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.now-complete{
+    text-decoration: line-through;
+}
+
+.dark-mode{
+    --Very-Dark-Blue: hsl(235, 21%, 11%);
+    --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+    --Light-Grayish-Blue2: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue : hsl(236, 33%, 92%);
+    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+    background: var(--Very-Dark-Blue);
+    color: var(--Very-Light-Gray);
+}
+
+
+
+
