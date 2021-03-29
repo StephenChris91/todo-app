@@ -22,7 +22,7 @@ body{
 
 .header{
     background: linear-gradient var(--Very-Dark-Blue), var(--Very-Dark-Grayish-Blue);
-    background: url('/images/bg-desktop-light.jpg') no-repeat;
+    background: url('/todo-app/images/bg-desktop-light.jpg') no-repeat;
     object-fit: contain;
     height: 300px;
     background-size: cover;
